@@ -29,6 +29,11 @@
 *   金币按钮的文字对齐方式的细节处理
 *   禁止金币按钮的交互
 4>  用代码修改状态栏的显示
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 
 3.  显示大图
 ================================================================================
