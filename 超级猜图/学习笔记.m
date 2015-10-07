@@ -28,6 +28,8 @@
 *   如何一次性修改多个控件的共同属性
 *   金币按钮的文字对齐方式的细节处理
 *   禁止金币按钮的交互
+取消User Interaction Enabled/Highlighted Adjuests Image，注意两者区别
+
 4>  用代码修改状态栏的显示
 -(UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -42,6 +44,9 @@
 (2) 将图像移动至顶层
 [self.view bringSubviewToFront:self.iconButton];
 (3) 动画放大图像，同时增加遮罩的透明度
+[UIView animateWithDuration:1.0f animations:^{
+    ...
+}];
 
 2>  缩小图片
 (1) 增加遮罩按钮的监听方法
