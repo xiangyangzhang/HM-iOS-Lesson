@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D20658C1BCBC7790067A77A /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D20658B1BCBC7790067A77A /* questions.plist */; };
+		7D4C5A981BCBC80900629C85 /* HMQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C5A971BCBC80900629C85 /* HMQuestion.m */; };
+		7D57BDCE1BCBDA82000EAE76 /* NSArray-Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D57BDCD1BCBDA82000EAE76 /* NSArray-Log.m */; };
 		7DD839A71BC259F800FF6457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD839A61BC259F800FF6457 /* main.m */; };
 		7DD839AA1BC259F800FF6457 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD839A91BC259F800FF6457 /* AppDelegate.m */; };
 		7DD839AD1BC259F800FF6457 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD839AC1BC259F800FF6457 /* ViewController.m */; };
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D20658B1BCBC7790067A77A /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		7D4C5A961BCBC80900629C85 /* HMQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMQuestion.h; sourceTree = "<group>"; };
+		7D4C5A971BCBC80900629C85 /* HMQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMQuestion.m; sourceTree = "<group>"; };
+		7D57BDCC1BCBDA82000EAE76 /* NSArray-Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-Log.h"; sourceTree = "<group>"; };
+		7D57BDCD1BCBDA82000EAE76 /* NSArray-Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-Log.m"; sourceTree = "<group>"; };
 		7DD839A11BC259F800FF6457 /* 超级猜图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "超级猜图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD839A51BC259F800FF6457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DD839A61BC259F800FF6457 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,8 +89,12 @@
 		7DD839A31BC259F800FF6457 /* 超级猜图 */ = {
 			isa = PBXGroup;
 			children = (
+				7D57BDCC1BCBDA82000EAE76 /* NSArray-Log.h */,
+				7D57BDCD1BCBDA82000EAE76 /* NSArray-Log.m */,
 				7DD839A81BC259F800FF6457 /* AppDelegate.h */,
 				7DD839A91BC259F800FF6457 /* AppDelegate.m */,
+				7D4C5A961BCBC80900629C85 /* HMQuestion.h */,
+				7D4C5A971BCBC80900629C85 /* HMQuestion.m */,
 				7DD839AB1BC259F800FF6457 /* ViewController.h */,
 				7DD839AC1BC259F800FF6457 /* ViewController.m */,
 				7DD839AE1BC259F800FF6457 /* Main.storyboard */,
@@ -96,6 +108,7 @@
 		7DD839A41BC259F800FF6457 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7D20658B1BCBC7790067A77A /* questions.plist */,
 				7DD839A51BC259F800FF6457 /* Info.plist */,
 				7DD839A61BC259F800FF6457 /* main.m */,
 			);
@@ -199,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D20658C1BCBC7790067A77A /* questions.plist in Resources */,
 				7DD839B01BC259F800FF6457 /* Main.storyboard in Resources */,
 				7DD839B51BC259F800FF6457 /* LaunchScreen.xib in Resources */,
 				7DD839B21BC259F800FF6457 /* Images.xcassets in Resources */,
@@ -219,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D57BDCE1BCBDA82000EAE76 /* NSArray-Log.m in Sources */,
+				7D4C5A981BCBC80900629C85 /* HMQuestion.m in Sources */,
 				7DD839AD1BC259F800FF6457 /* ViewController.m in Sources */,
 				7DD839AA1BC259F800FF6457 /* AppDelegate.m in Sources */,
 				7DD839A71BC259F800FF6457 /* main.m in Sources */,
@@ -418,6 +434,7 @@
 				7DD839C61BC259F800FF6457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DD839C71BC259F800FF6457 /* Build configuration list for PBXNativeTarget "超级猜图Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				7DD839C91BC259F800FF6457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

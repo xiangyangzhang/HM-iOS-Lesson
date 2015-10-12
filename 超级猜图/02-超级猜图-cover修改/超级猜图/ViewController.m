@@ -7,15 +7,32 @@
 //
 
 #import "ViewController.h"
+#import "HMQuestion.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *iconButton;
 @property (nonatomic, strong) UIButton *cover;
+@property (nonatomic, strong) NSArray *questions;
 
 @end
 
 @implementation ViewController
+
+- (NSArray *)questions
+{
+    if (_questions == nil) {
+        _questions = [HMQuestion questions];
+    }
+    return _questions;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"%@", self.questions);
+    
+}
 
 - (UIButton *)cover
 {
