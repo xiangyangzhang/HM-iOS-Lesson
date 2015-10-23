@@ -31,10 +31,10 @@
 //取消User Interaction Enabled/Highlighted Adjuests Image，注意两者区别
 
 4>  用代码修改状态栏的显示
-//-(UIStatusBarStyle)preferredStatusBarStyle
-//{
-//    return UIStatusBarStyleLightContent;
-//}
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 
 
 3.  显示大图
@@ -42,11 +42,11 @@
 1>  放大显示
 (1) 增加遮罩
 (2) 将图像移动至顶层
-//[self.view bringSubviewToFront:self.iconButton];
+[self.view bringSubviewToFront:self.iconButton];
 (3) 动画放大图像，同时增加遮罩的透明度
-//[UIView animateWithDuration:1.0f animations:^{
-//    ...
-//}];
+[UIView animateWithDuration:1.0f animations:^{
+    ...
+}];
 
 2>  缩小图片
 (1) 增加遮罩按钮的监听方法
@@ -100,10 +100,20 @@
 4>  备选按钮
 
 5>  代码重构，让主方法在阅读时的思路更加连贯！
+//主力代码保持简洁
+
 
 6>  备选按钮的可重用优化 & 设置按钮标题
+if(self.optionView.subViews != question.options.count){
+    //创建按钮
+}else{
+    //替换标题文章
+    [btn setTitle:question.options[i++] forState:UIControlStateNormal];
+}
+
 
 6.  备选按钮点击处理
+//设置按钮标题颜色为白色
 ================================================================================
 1> 在答案区查找第一个文字为空的按钮
 2> 隐藏备选按钮
