@@ -27,7 +27,7 @@
                                 </state>
                                 <state key="highlighted" image="icon_tip" backgroundImage="btn_left_highlighted"/>
                                 <connections>
-                                    <action selector="tipsClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dPT-rD-fNZ"/>
+                                    <action selector="tipClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fUD-Yi-Nd2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P7c-cQ-EUB">
@@ -127,6 +127,7 @@
                         <outlet property="nextQuestionButton" destination="z9w-50-1Tr" id="lod-2u-AXI"/>
                         <outlet property="noLabel" destination="GFP-NX-W3y" id="zit-gP-Ob2"/>
                         <outlet property="optionsView" destination="dTP-XY-MUG" id="sP0-16-vfh"/>
+                        <outlet property="scoreButton" destination="kTC-aq-TiS" id="ys3-La-Wn1"/>
                         <outlet property="titleLabel" destination="PAi-32-OTg" id="5kT-qy-4yy"/>
                     </connections>
                 </viewController>

@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *noLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *nextQuestionButton;
+@property (weak, nonatomic) IBOutlet UIButton *scoreButton;
 
 
 @property (nonatomic, strong) UIButton *cover;
@@ -46,7 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     self.index = -1;
     [self nextQuestion];
 }
@@ -137,13 +138,15 @@
 {
     self.noLabel.text = [NSString stringWithFormat:@"%d/%lu", self.index+1,(unsigned long)self.questions.count];
     self.titleLabel.text = question.title;
-    [self.iconButton setImage:[UIImage imageNamed:question.icon] forState:UIControlStateNormal];
+    //  [self.iconButton setImage:[UIImage imageNamed:question.icon] forState:UIControlStateNormal];
+    [self.iconButton setImage:question.image forState:UIControlStateNormal];
     
     self.nextQuestionButton.enabled = (self.index < self.questions.count-1);
     
 }
 
 /** 创建答案区按钮 */
+
 
 - (void)creatAnswerButton:(HMQuestion *)question
 {
@@ -194,17 +197,21 @@
             [self.optionsView addSubview:btn];
             [btn addTarget:self action:@selector(optionClick:) forControlEvents:UIControlEventTouchUpInside];
         }
-
+        
     }
     else{
         int i = 0;
+        
+        [question randomOptions];
+        
         for (UIButton *btn in self.optionsView.subviews) {
+            
             [btn setTitle:question.options[i++] forState:UIControlStateNormal];
             
             //点下一题之后恢复所有按钮可见
             btn.hidden =NO;
         }
-
+        
     }
     
     
@@ -221,13 +228,13 @@
     
     //如果按钮全满，什么都不做
     if (btn == nil) return;
-        
+    
     //2、设置答案区按钮标题等于备选区按钮
     [btn setTitle:button.currentTitle forState:UIControlStateNormal];
     
     //3、隐藏备选区按钮
     button.hidden = YES;
-
+    
     //4、判断对错
     [self judge];
     
@@ -255,6 +262,7 @@
         
         if ([strM isEqualToString:question.answer] ) {
             [self setAnswerColor:[UIColor blueColor]];
+            [self changeScore:1000];
             
             //等0.5s进入下一题
             [self performSelector:@selector(nextQuestion) withObject:nil afterDelay:0.5];
@@ -262,7 +270,7 @@
         }else{
             [self setAnswerColor:[UIColor redColor]];
         }
-
+        
     }
     
 }
@@ -294,20 +302,17 @@
     if (button.currentTitle.length == 0) return;
     //2、查找备选区按钮
     UIButton *btn = [self setButtonTitle:button.currentTitle isHidden:YES];
-            
+    
     //3、备选区按钮显示
     btn.hidden = NO;
-            
+    
     //4、答题区按钮文字清除
     [button setTitle:@"" forState:UIControlStateNormal];
-            
+    
     //5、答题区颜色变黑
     [self setAnswerColor:[UIColor blackColor]];
     
-    
 }
-
-#pragma mark - 提示
 
 /** 恢复备选区按钮 */
 - (UIButton *)setButtonTitle:(NSString *)btnTitle isHidden:(BOOL)isHidden
@@ -316,23 +321,43 @@
     for (UIButton *btn in self.optionsView.subviews) {
         if ([btn.currentTitle isEqualToString:btnTitle] && btn.hidden == isHidden  ) {
             [btn setTitle:btnTitle forState:UIControlStateNormal];
+            return btn;
         }
+    }
+    return nil;
 }
 
-- (IBAction)tipsClick
-{
+#pragma mark - 提示
+
+- (IBAction)tipClick{
+    
+    NSLog(@"TEST");
     //1、清除所有按钮
     for (UIButton *btn in self.answerView.subviews) {
         [self answerClick:btn];
     }
     //2、首个按钮加字
-    self a
+    HMQuestion *question = self.questions[self.index];
+    
+    NSString *fristButtonTitle = [question.answer substringToIndex:1 ];
+    UIButton *btn = [self setButtonTitle:fristButtonTitle isHidden:NO];
+    [self optionClick:btn];
+    
+    [self changeScore:-800];
+    
+}
+
+#pragma mark - 设置分数
+
+- (void) changeScore:(int) score
+{
+    //1、取出分数
+    int currentScore = self.scoreButton.currentTitle.intValue;
+    //2、处理分数
+    currentScore += score;
+    //3、设置分数
+    [self.scoreButton setTitle:[NSString stringWithFormat:@"%d",currentScore] forState:UIControlStateNormal];
 }
 
 @end
-
-
-
-
-
 

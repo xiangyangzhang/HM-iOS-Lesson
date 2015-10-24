@@ -1,6 +1,6 @@
 //
 //  HMQuestion.m
-//  
+//
 //
 //  Created by 倪凡乐 on 15/10/12.
 //
@@ -9,6 +9,15 @@
 #import "HMQuestion.h"
 
 @implementation HMQuestion
+@synthesize image = _image;
+
+- (UIImage *)image
+{
+    if(_image == nil){
+        _image = [UIImage imageNamed:self.icon];
+    }
+    return _image;
+}
 
 - (instancetype) initWithDict:(NSDictionary *)dict
 {
@@ -17,6 +26,7 @@
     //KVC,字典转模型，不需要逐个列举plist键值
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
+        [self randomOptions];
     }
     return self;
 }
@@ -36,7 +46,20 @@
         [arrayM addObject:[self questionWithDict:dict]];
     }
     return arrayM;
-                      
+    
+}
+
+- (void)randomOptions
+{
+    self.options = [self.options sortedArrayUsingComparator:^NSComparisonResult(NSString *str1, NSString *str2) {
+        int seed = arc4random_uniform(2);
+        if (seed) {
+            return [str1 compare:str2];
+        }else{
+            return [str2 compare:str1];
+        }
+    }];
+    NSLog(@"%@",self.options);
 }
 
 //新模型重写description方法方便调试

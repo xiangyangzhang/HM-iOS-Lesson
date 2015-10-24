@@ -1,12 +1,13 @@
 //
 //  HMQuestion.h
-//  
+//
 //
 //  Created by 倪凡乐 on 15/10/12.
 //
 //
 
 #import <Foundation/Foundation.h>
+#import "ViewController.h"
 
 @interface HMQuestion : NSObject
 
@@ -14,6 +15,7 @@
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *answer;
 @property (strong, nonatomic) NSArray *options;
+@property (nonatomic,strong,readonly) UIImage *image;
 
 - (instancetype) initWithDict:(NSDictionary *)dict;
 
@@ -24,5 +26,6 @@
 
 - (NSString *)description;
 
+- (void)randomOptions;
 
 @end
