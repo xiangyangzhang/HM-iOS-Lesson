@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jos-eQ-MPg">
+                                <rect key="frame" x="115" y="111" width="371" height="30"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="egd-he-PKy"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vdr-en-sTF">
+                                <rect key="frame" x="115" y="183" width="371" height="30"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" hint="输入密码"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="RJr-CQ-HbN"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJv-VK-WGg">
+                                <rect key="frame" x="285" y="253" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xak-tD-NZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jos-eQ-MPg" firstAttribute="leading" secondItem="vdr-en-sTF" secondAttribute="leading" id="48F-vA-eva"/>
+                            <constraint firstItem="vdr-en-sTF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4aC-Rq-vbi"/>
+                            <constraint firstItem="VJv-VK-WGg" firstAttribute="top" secondItem="vdr-en-sTF" secondAttribute="bottom" constant="40" id="Mud-AW-xS4"/>
+                            <constraint firstItem="vdr-en-sTF" firstAttribute="top" secondItem="jos-eQ-MPg" secondAttribute="bottom" constant="42" id="ZC8-h2-4NK"/>
+                            <constraint firstItem="jos-eQ-MPg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="99" id="gFa-Zw-0cn"/>
+                            <constraint firstItem="jos-eQ-MPg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="91" id="hqp-op-8pj"/>
+                            <constraint firstItem="vdr-en-sTF" firstAttribute="centerX" secondItem="VJv-VK-WGg" secondAttribute="centerX" id="wHy-Vi-b2o"/>
+                            <constraint firstItem="jos-eQ-MPg" firstAttribute="trailing" secondItem="vdr-en-sTF" secondAttribute="trailing" id="zmx-Zx-qoR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pswText" destination="vdr-en-sTF" id="7Zi-pk-E35"/>
+                        <outlet property="userNameText" destination="jos-eQ-MPg" id="Add-QL-gfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
