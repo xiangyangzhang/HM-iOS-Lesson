@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-f7-q6y">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="计时器" id="ZKp-Yu-8k3">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="apq-6u-2Bi"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-Vc-4WV">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="FJX-Ni-je2">
+                                        <connections>
+                                            <action selector="start" destination="vXZ-lx-hvc" id="TYU-n7-SqY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fJM-gn-0u8"/>
+                                    <barButtonItem title="Item" systemItem="pause" id="5L7-mX-evl">
+                                        <connections>
+                                            <action selector="pause" destination="vXZ-lx-hvc" id="xTg-d8-XKa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7m-Bd-eUC">
+                                <rect key="frame" x="16" y="285" width="343" height="95.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="s7m-Bd-eUC" secondAttribute="trailing" id="20S-Zw-xiJ"/>
+                            <constraint firstItem="aTG-f7-q6y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KiV-Mp-mVC"/>
+                            <constraint firstAttribute="trailing" secondItem="4Mf-Vc-4WV" secondAttribute="trailing" id="MeK-bD-HIJ"/>
+                            <constraint firstAttribute="centerY" secondItem="s7m-Bd-eUC" secondAttribute="centerY" id="NDt-NN-eRz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4Mf-Vc-4WV" secondAttribute="bottom" id="XTw-QZ-rAm"/>
+                            <constraint firstItem="4Mf-Vc-4WV" firstAttribute="leading" secondItem="aTG-f7-q6y" secondAttribute="leading" id="bpe-Vf-C0M"/>
+                            <constraint firstItem="s7m-Bd-eUC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="fPs-RU-oCV"/>
+                            <constraint firstItem="aTG-f7-q6y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="m4e-gR-jNA"/>
+                            <constraint firstItem="aTG-f7-q6y" firstAttribute="trailing" secondItem="4Mf-Vc-4WV" secondAttribute="trailing" id="tgu-gh-Hao"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="countLabel" destination="s7m-Bd-eUC" id="sS1-Ud-NA2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
