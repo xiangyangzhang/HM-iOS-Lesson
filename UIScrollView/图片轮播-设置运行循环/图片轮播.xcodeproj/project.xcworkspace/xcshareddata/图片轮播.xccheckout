@@ -14,7 +14,7 @@
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Scrollview/图片轮播-运行循环/图片轮播.xcodeproj</string>
+	<string>UIScrollview/图片轮播-设置运行循环/图片轮播.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
