@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4B4C5A96-A399-48EC-AC03-0D07FEE28F20</string>
+	<string>D4F0D943-05FF-4D48-93F8-B09308F47304</string>
 	<key>IDESourceControlProjectName</key>
-	<string>查看大图</string>
+	<string>图片轮播</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Scrollview/查看大图/查看大图.xcodeproj</string>
+	<string>Scrollview/图片轮播/图片轮播.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
