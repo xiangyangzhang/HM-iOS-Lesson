@@ -17,7 +17,7 @@
 -(instancetype)initWithDict:(NSDictionary *)dict;
 +(instancetype)heroWithDict:(NSDictionary *)dict;
 
-+ (NSArray *)heroes;
++ (NSArray *)LOLHeroes;
 
 
 @end

@@ -24,7 +24,7 @@
     return [[self alloc]initWithDict:dict];
 }
 
-+ (NSArray *)heroes
++ (NSArray *)LOLHeroes
 {
     NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"heros.plist" ofType:nil]];
             
