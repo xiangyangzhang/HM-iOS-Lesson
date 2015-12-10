@@ -14,7 +14,6 @@
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray *LOLHeroes;
 
-
 @end
 
 @implementation ViewController
@@ -85,11 +84,53 @@
     //图像
     cell.imageView.image = [UIImage imageNamed:LOLH.icon];
     
+    //表格右侧控件定义
+    //1、UITableViewCellAccessoryNone
+    //2、UITableViewCellAccessoryDisclosureIndicator 数据行操作
+    //3、UITableViewCellAccessoryDetailDisclosureButton 信息按钮及数据行均可操作
+    //4、UITableViewCellAccessoryDetailButton 信息按钮
+    //4、UITableViewCellAccessoryCheckmark 打勾，表示该行数据设置完毕，用的较少
+    //cell.accessoryType = UITableViewCellAccessoryDetailButton;
+    
+    
+    //指定自定义控件
+    /**
+     通常accessoryType不能满足要求时，才使用自定义控件
+     但需自行定义监听方法，通常写在cell中，不要写在视图控制器中
+     */
+    UISwitch *swither = [[UISwitch alloc]init];
+    
+    [swither addTarget:self action:@selector(swithChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    cell.accessoryView = swither;
+    
     return cell;
     
 }
 
-# pragma mark - 计算行高
+# pragma mark - 代理方法
+
+//开关方法
+- (void)swithChanged:(UISwitch *)sender
+{
+    NSLog(@"%s",__func__);
+}
+
+//选中某一行
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s",__func__);
+}
+
+//信息按钮显示
+//此方法不会触发行选中
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s",__func__);
+}
+
+//代理
+
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return (indexPath.row % 2)?60:44;
