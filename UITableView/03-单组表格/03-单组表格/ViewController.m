@@ -78,10 +78,21 @@
     //2.取出缓存池中可重用的单元格
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
-    //3.如果没有找到，实例化单元格
+    //3.如果没有找到，实例化单元格,通用的属性写在if语句中
     if (cell == nil) {
         NSLog(@"实例化单元格");
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+        
+        cell.backgroundColor = [UIColor greenColor];
+        
+        //未选中单元格背景视图，图片自动填充，实际开发中应用较多
+        //UIImage *BGImage = [UIImage imageNamed:@"img_01"];
+        //cell.backgroundView = [[UIImageView alloc] initWithImage:BGImage];
+        
+        //选中单元格的背景视图
+        UIImage *seletedBGImage = [UIImage imageNamed:@"img_01.jpg"];
+        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:seletedBGImage];
     }
     
     //取出英雄对象

@@ -18,6 +18,7 @@
 		7D0968581C0CA336007DD6FB /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0968571C0CA336007DD6FB /* Hero.m */; };
 		7DF9CE131C1C916100514F2B /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF9CE121C1C916100514F2B /* Reveal.framework */; };
 		7DF9CE151C1C927800514F2B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF9CE141C1C927800514F2B /* libz.dylib */; };
+		7DF9CE171C1DBE5700514F2B /* img_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF9CE161C1DBE5700514F2B /* img_01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7D0968571C0CA336007DD6FB /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		7DF9CE121C1C916100514F2B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		7DF9CE141C1C927800514F2B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7DF9CE161C1DBE5700514F2B /* img_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		7D09682E1C0CA140007DD6FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DF9CE161C1DBE5700514F2B /* img_01.jpg */,
 				7D0968541C0CA31E007DD6FB /* heros.plist */,
 				7D09682F1C0CA140007DD6FB /* Info.plist */,
 				7D0968301C0CA140007DD6FB /* main.m */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D09683A1C0CA140007DD6FB /* Main.storyboard in Resources */,
+				7DF9CE171C1DBE5700514F2B /* img_01.jpg in Resources */,
 				7D09683F1C0CA140007DD6FB /* LaunchScreen.xib in Resources */,
 				7D0968551C0CA31E007DD6FB /* heros.plist in Resources */,
 				7D09683C1C0CA140007DD6FB /* Images.xcassets in Resources */,
