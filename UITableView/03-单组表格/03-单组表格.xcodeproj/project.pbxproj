@@ -16,6 +16,8 @@
 		7D09684B1C0CA141007DD6FB /* _3_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D09684A1C0CA141007DD6FB /* _3_____Tests.m */; };
 		7D0968551C0CA31E007DD6FB /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D0968541C0CA31E007DD6FB /* heros.plist */; };
 		7D0968581C0CA336007DD6FB /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0968571C0CA336007DD6FB /* Hero.m */; };
+		7DF9CE131C1C916100514F2B /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF9CE121C1C916100514F2B /* Reveal.framework */; };
+		7DF9CE151C1C927800514F2B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF9CE141C1C927800514F2B /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7D0968541C0CA31E007DD6FB /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heros.plist; sourceTree = "<group>"; };
 		7D0968561C0CA336007DD6FB /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		7D0968571C0CA336007DD6FB /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		7DF9CE121C1C916100514F2B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		7DF9CE141C1C927800514F2B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF9CE151C1C927800514F2B /* libz.dylib in Frameworks */,
+				7DF9CE131C1C916100514F2B /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7D09682D1C0CA140007DD6FB /* 03-单组表格 */,
+				7DF9CE111C1C913400514F2B /* Frameworks */,
 				7D0968471C0CA141007DD6FB /* 03-单组表格Tests */,
 				7D09682C1C0CA140007DD6FB /* Products */,
 			);
@@ -125,6 +132,15 @@
 				7D0968491C0CA141007DD6FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DF9CE111C1C913400514F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DF9CE141C1C927800514F2B /* libz.dylib */,
+				7DF9CE121C1C916100514F2B /* Reveal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +373,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "03-单组表格/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,8 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "03-单组表格/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -426,6 +452,7 @@
 				7D0968501C0CA141007DD6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D0968511C0CA141007DD6FB /* Build configuration list for PBXNativeTarget "03-单组表格Tests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +461,7 @@
 				7D0968531C0CA141007DD6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

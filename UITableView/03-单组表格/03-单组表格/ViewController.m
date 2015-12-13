@@ -47,8 +47,8 @@
     
     [self tableView];
     
-//    设置行高
-//    self.tableView.rowHeight = 60;
+    //设置统一行高
+    self.tableView.rowHeight = 100;
 
 }
 
@@ -57,6 +57,7 @@
 //每个分组中的数据总数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"数据总数");
     return self.LOLHeroes.count;
 }
 
@@ -70,7 +71,18 @@
 //每个单元格的明细信息
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    //1.可重用标示符字符串
+    //static静态变量，一个变量只存在一个内存地址中，不会被释放，直到应用结束
+    static NSString *cellID = @"cell";
+    
+    //2.取出缓存池中可重用的单元格
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    //3.如果没有找到，实例化单元格
+    if (cell == nil) {
+        NSLog(@"实例化单元格");
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
     
     //取出英雄对象
     Hero *LOLH = self.LOLHeroes[indexPath.row];
@@ -104,6 +116,8 @@
     
     cell.accessoryView = swither;
     
+    NSLog(@"单元格明细%ld",(long)indexPath.row);
+    
     return cell;
     
 }
@@ -129,12 +143,12 @@
     NSLog(@"%s",__func__);
 }
 
-//代理
-
--(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return (indexPath.row % 2)?60:44;
-}
+//代理,设置不同行高
+//
+//-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return (indexPath.row % 2)?60:44;
+//}
 
 /**
  表格执行顺序
