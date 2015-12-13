@@ -49,6 +49,20 @@
     
     //设置统一行高
     self.tableView.rowHeight = 100;
+    
+    //设置分隔线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.tableView.separatorColor = [UIColor colorWithRed:0 green:255.0/255.0 blue:0 alpha:0.8];
+    
+    //tableHeaderView，表格最顶部，通常放置图片轮播器
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 120)];
+    headerView.backgroundColor = [UIColor blueColor];
+    self.tableView.tableHeaderView = headerView;
+    
+    //tableFooterView，通常用于网络刷新
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 80)];
+    footerView.backgroundColor = [UIColor redColor];
+    self.tableView.tableFooterView = footerView;
 
 }
 
@@ -84,15 +98,16 @@
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
         
-        cell.backgroundColor = [UIColor greenColor];
+        //设置单元格背景颜色
+        //cell.backgroundColor = [UIColor greenColor];
         
         //未选中单元格背景视图，图片自动填充，实际开发中应用较多
         //UIImage *BGImage = [UIImage imageNamed:@"img_01"];
         //cell.backgroundView = [[UIImageView alloc] initWithImage:BGImage];
         
         //选中单元格的背景视图
-        UIImage *seletedBGImage = [UIImage imageNamed:@"img_01.jpg"];
-        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:seletedBGImage];
+        //UIImage *seletedBGImage = [UIImage imageNamed:@"img_01.jpg"];
+        //cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:seletedBGImage];
     }
     
     //取出英雄对象
