@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9535CA23-EE02-4FD1-BBC1-C9860727E4F6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>04-汽车品牌</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UITableView/04-汽车品牌/04-汽车品牌.xcodeproj/project.xcworkspace</string>
+	<string>UITableView/04-汽车品牌/04-汽车品牌.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
