@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9BF3511C2C3AD000B0299E /* NFLStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9BF3501C2C3AD000B0299E /* NFLStatusCell.m */; };
 		7DB6C6111C282D1B00263A86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6C6101C282D1B00263A86 /* main.m */; };
 		7DB6C61A1C282D1B00263A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C6181C282D1B00263A86 /* Main.storyboard */; };
 		7DB6C61C1C282D1B00263A86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB6C61B1C282D1B00263A86 /* Images.xcassets */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D9BF34F1C2C3AD000B0299E /* NFLStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFLStatusCell.h; sourceTree = "<group>"; };
+		7D9BF3501C2C3AD000B0299E /* NFLStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFLStatusCell.m; sourceTree = "<group>"; };
 		7DB6C60B1C282D1B00263A86 /* 06-新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB6C60F1C282D1B00263A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB6C6101C282D1B00263A86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D9BF34E1C2C3AD000B0299E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D9BF34F1C2C3AD000B0299E /* NFLStatusCell.h */,
+				7D9BF3501C2C3AD000B0299E /* NFLStatusCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7DB6C6021C282D1B00263A86 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +163,8 @@
 			children = (
 				7DB6C6351C282DE100263A86 /* Controllers */,
 				7DB6C6381C282DE100263A86 /* Models */,
+				7D9BF34E1C2C3AD000B0299E /* Views */,
 				7DB6C6391C282DE100263A86 /* Other */,
-				7DB6C63C1C282DE100263A86 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -182,13 +194,6 @@
 				7DB6C63B1C282DE100263A86 /* AppDelegate.m */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		7DB6C63C1C282DE100263A86 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		7DB6C6451C282EAF00263A86 /* icon */ = {
@@ -331,6 +336,7 @@
 				7DB6C63D1C282DE100263A86 /* ViewController.m in Sources */,
 				7DB6C6111C282D1B00263A86 /* main.m in Sources */,
 				7DB6C6441C282E7600263A86 /* NFLStatus.m in Sources */,
+				7D9BF3511C2C3AD000B0299E /* NFLStatusCell.m in Sources */,
 				7DB6C63E1C282DE100263A86 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +532,7 @@
 				7DB6C6301C282D1B00263A86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DB6C6311C282D1B00263A86 /* Build configuration list for PBXNativeTarget "06-新浪微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				7DB6C6331C282D1B00263A86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
