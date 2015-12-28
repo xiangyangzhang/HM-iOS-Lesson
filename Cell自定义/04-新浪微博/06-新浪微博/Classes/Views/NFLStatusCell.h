@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class NFLStatus;
+@class NFLStatusFrame;
 
 @interface NFLStatusCell : UITableViewCell
 
-@property (nonatomic, strong)NFLStatus *status;
+@property (nonatomic, strong) NFLStatusFrame *statusFrame;
 
 @end

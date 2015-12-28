@@ -8,6 +8,8 @@
 
 #import "NFLStatusCell.h"
 #import "NFLStatus.h"
+#import "NFLStatusFrame.h"
+
 
 /** 姓名字体 */
 #define kNameFont [UIFont systemFontOfSize:14]
@@ -84,9 +86,9 @@
     return _pictureView;
 }
 
-- (void)setStatus:(NFLStatus *)status
+- (void)setStatusFrame:(NFLStatusFrame *)statusFrame
 {
-    _status = status;
+    _statusFrame = statusFrame;
     
     //1> 设置数据
     [self settingData];
@@ -99,14 +101,16 @@
 /** 设置数据 */
 - (void)settingData
 {
+    NFLStatus *status = self.statusFrame.status;
+    
     //头像
-    self.iconView.image = [UIImage imageNamed:self.status.icon];
+    self.iconView.image = [UIImage imageNamed:status.icon];
     
     //姓名
-    self.nameView.text = self.status.name;
+    self.nameView.text = status.name;
     
     //vip(可选)
-    if (self.status.vip) {
+    if (status.vip) {
         self.vipView.hidden = NO;
         self.nameView.textColor = [UIColor redColor];
     }else{
@@ -115,13 +119,13 @@
     }
     
     //正文
-    self.textView.text = self.status.text;
+    self.textView.text = status.text;
     
     //配图（可选）
 
     if (self.pictureView > 0) {
         self.pictureView.hidden = NO;
-        self.pictureView.image = [UIImage imageNamed:self.status.picture];
+        self.pictureView.image = [UIImage imageNamed:status.picture];
     }else{
         self.pictureView.hidden = YES;
     }
@@ -131,62 +135,22 @@
 
 - (void)settingFrame
 {
-    //0. 定义间距
-    CGFloat padding = 10;
+    // 1. 头像
+    self.iconView.frame = self.statusFrame.iconF;
     
-    //1. 头像
-    CGFloat iconX = padding;
-    CGFloat iconY = padding;
-    CGFloat iconW = 30;
-    CGFloat iconH = 30;
-    self.iconView.frame = CGRectMake(iconX, iconY, iconW, iconH);
+    // 2. 姓名大小由文字的长度来决定
+    self.nameView.frame = self.statusFrame.nameF;
     
-    //2. 姓名大小由文字长度决定
-    //boundingRectWithSize计算给定文本字符串所占的区域
-    //返回值是一个x,y = 0 的CGRect,w,是计算好的宽高
-    //如果要计算多行的准确高度，需传入NSStringDrawingUsesLineFragmentOrigin选项
-    //dict用于指定字体的相关属性字典，UIKit框架的第一个头文件
+    // vip图标
+    self.vipView.frame = self.statusFrame.vipF;
     
-    NSDictionary *nameDict = @{NSFontAttributeName:kNameFont};
-    CGRect nameFrame = [self.status.name boundingRectWithSize:CGSizeMake(MAXFLOAT,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:nameDict context:nil];
+    // 正文
+    self.textView.frame = self.statusFrame.textF;
     
-    nameFrame.origin.x = CGRectGetMaxX(self.iconView.frame) +padding;
-    nameFrame.origin.y = padding + (self.iconView.bounds.size.height - nameFrame.size.height) * 0.5;
-    self.nameView.frame = nameFrame;
-    
-    //3. VIP图标
-    CGFloat vipX = CGRectGetMaxX(nameFrame)+padding;
-    CGFloat vipY = nameFrame.origin.y;
-    CGFloat vipW = 14;
-    CGFloat vipH = 14;
-    
-    self.vipView.frame = CGRectMake(vipX, vipY, vipW, vipH);
-    
-    //4. 正文
-    NSDictionary *textDict = @{NSFontAttributeName:kTextFont};
-    CGRect textFrame = [self.status.text boundingRectWithSize:CGSizeMake(355, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:textDict context:nil];
-    textFrame.origin.x = padding;
-    textFrame.origin.y = CGRectGetMaxY(self.iconView.frame)+padding;
-    
-    self.textView.frame = textFrame;
-    
-    CGFloat cellHeight;
-    
-    if (self.status.picture > 0) {
-        //5. 图片
-        CGFloat pictureX = padding;
-        CGFloat pictureY = CGRectGetMaxY(self.textView.frame)+padding;
-        CGFloat pictureW = 100;
-        CGFloat pictureH = 100;
-        
-        self.pictureView.frame = CGRectMake(pictureX, pictureY, pictureW, pictureH);
-        
-        cellHeight = CGRectGetMaxY(self.pictureView.frame)+padding;
-        
-    }else{
-        cellHeight = CGRectGetMaxY(self.textView.frame)+padding; 
+    // 配图
+    if (self.statusFrame.status.picture.length > 0) {
+        self.pictureView.frame = self.statusFrame.pictureF;
     }
-    
 }
 
 
