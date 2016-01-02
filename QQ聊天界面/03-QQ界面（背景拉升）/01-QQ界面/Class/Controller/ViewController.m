@@ -47,6 +47,16 @@
     [super viewDidLoad];
     
     [self tableView];
+    
+    //cell 不可选中
+    self.tableView.allowsSelection = NO;
+    
+    //设置背景色
+    self.tableView.backgroundColor = [UIColor colorWithRed:225/255.0 green:225/255.0 blue:225/255.0 alpha:1.0];
+    
+    //取消分隔线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
 
 //隐藏状态栏

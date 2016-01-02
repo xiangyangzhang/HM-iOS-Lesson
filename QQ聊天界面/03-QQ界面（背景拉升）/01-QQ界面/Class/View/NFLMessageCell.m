@@ -49,9 +49,13 @@
         
         //2.正文
         UIButton *textView = [[UIButton alloc]init];
-        textView.backgroundColor = [UIColor grayColor];
+        //textView.backgroundColor = [UIColor grayColor];
         textView.titleLabel.font = kButtonFont;
-        textView.titleLabel.numberOfLines = 0;//自动换行
+        //自动换行
+        textView.titleLabel.numberOfLines = 0;
+        //设置按钮内边距
+        textView.contentEdgeInsets = UIEdgeInsetsMake(20, 20, 20, 20);
+        [textView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.contentView addSubview:textView];
         self.textButton = textView;
         
@@ -59,6 +63,10 @@
         UIImageView *icon = [[UIImageView alloc]init];
         [self.contentView addSubview:icon];
         self.iconView = icon;
+        
+        //单元格背景设为透明
+        self.backgroundColor = [UIColor clearColor];
+
     }
     return self;
 }
@@ -84,7 +92,27 @@
     //正文,设置大小位置和内容
     self.textButton.frame = messageFrame.textViewF;
     [self.textButton setTitle:frame.text forState:UIControlStateNormal];
+    //设置聊天正文背景
+    if (frame.type == NFLMessagTypeGatsby) {
+        [self.textButton setBackgroundImage:[self resizeWithImageName:@"chat_send_nor"] forState:UIControlStateNormal];
+    }else{
+        [self.textButton setBackgroundImage:[self resizeWithImageName:@"chat_recive_nor"] forState:UIControlStateNormal];
+    }
+        
     
+}
+
+
+//返回一个可拉伸图片
+- (UIImage *)resizeWithImageName:(NSString *)name
+{
+    UIImage *normal = [UIImage imageNamed:name];
+    
+    //拉伸最中间的那个小方块
+    CGFloat w = normal.size.width * 0.5-1;
+    CGFloat h = normal.size.height * 0.5-1;
+    return [normal resizableImageWithCapInsets:UIEdgeInsetsMake(h, w, h, w)];
+
 }
 
 

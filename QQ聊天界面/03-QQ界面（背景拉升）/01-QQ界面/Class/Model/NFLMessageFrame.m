@@ -18,12 +18,15 @@
     _message = message;
     
     //时间
-    CGFloat timeX = 0;
-    CGFloat timeY = 0;
-    CGFloat timeW = kScreenWidth;
-    CGFloat timeH = kNormalHeight;
-    
-    _timeF = CGRectMake(timeX, timeY, timeW, timeH);
+    if (message.hideTime == 0) {
+        
+        CGFloat timeX = 0;
+        CGFloat timeY = 0;
+        CGFloat timeW = kScreenWidth;
+        CGFloat timeH = kNormalHeight;
+        
+        _timeF = CGRectMake(timeX, timeY, timeW, timeH);
+    }
     
     
     //头像
@@ -45,21 +48,23 @@
 
     //正文
     CGFloat textX;
-    CGFloat textY = iconY;
+    CGFloat textY = iconY + kPadding;
     
     CGSize textMaxSize = CGSizeMake(kTextMaxWidth, MAXFLOAT);//确定正文最大宽度和高度
     CGSize textRealSize = [message.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:kButtonFont} context:nil].size;
+    //增大正文按钮
+    CGSize btnSize = CGSizeMake(textRealSize.width+40, textRealSize.height+40);
     
     if (message.type == NFLMessagTypeGatsby) {
         //自己发
-        textX = kScreenWidth - textRealSize.width - iconW - kPadding;
+        textX = kScreenWidth - btnSize.width - iconW - kPadding;
         
     }else{
         //别人发
         textX = iconW + kPadding;
     }
     
-    _textViewF = (CGRect){{textX,textY},textRealSize};
+    _textViewF = (CGRect){{textX,textY},btnSize};
 
     //行高
     CGFloat iconMaxY = CGRectGetMaxY(_iconF);
