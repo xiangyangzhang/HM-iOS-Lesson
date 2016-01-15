@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2C274879-261F-4219-B89B-08195507C79D</string>
+	<string>37A0DF70-EC7A-42E1-9751-C1075DE8A5D7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>国旗选择</string>
+	<string>省市联动</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DataPicker/国旗选择/国旗选择.xcodeproj</string>
+	<string>DataPicker/省市联动/省市联动.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
