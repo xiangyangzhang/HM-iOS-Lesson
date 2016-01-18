@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D3FAC6C1C4D061D00569957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FAC6B1C4D061D00569957 /* main.m */; };
+		7D3FAC6F1C4D061D00569957 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FAC6E1C4D061D00569957 /* AppDelegate.m */; };
+		7D3FAC721C4D061D00569957 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FAC711C4D061D00569957 /* ViewController.m */; };
+		7D3FAC751C4D061D00569957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FAC731C4D061D00569957 /* Main.storyboard */; };
+		7D3FAC771C4D061D00569957 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FAC761C4D061D00569957 /* Images.xcassets */; };
+		7D3FAC7A1C4D061D00569957 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FAC781C4D061D00569957 /* LaunchScreen.xib */; };
+		7D3FAC861C4D061D00569957 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FAC851C4D061D00569957 /* ____Tests.m */; };
+		7D3FAC901C4D06E200569957 /* 鸣人笑容.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FAC8F1C4D06E200569957 /* 鸣人笑容.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D3FAC801C4D061D00569957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3FAC5E1C4D061D00569957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3FAC651C4D061D00569957;
+			remoteInfo = "手势识别";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D3FAC661C4D061D00569957 /* 手势识别.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "手势识别.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3FAC6A1C4D061D00569957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3FAC6B1C4D061D00569957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D3FAC6D1C4D061D00569957 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D3FAC6E1C4D061D00569957 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D3FAC701C4D061D00569957 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7D3FAC711C4D061D00569957 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7D3FAC741C4D061D00569957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D3FAC761C4D061D00569957 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D3FAC791C4D061D00569957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7D3FAC7F1C4D061D00569957 /* 手势识别Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "手势识别Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3FAC841C4D061D00569957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3FAC851C4D061D00569957 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		7D3FAC8F1C4D06E200569957 /* 鸣人笑容.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鸣人笑容.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3FAC631C4D061D00569957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3FAC7C1C4D061D00569957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3FAC5D1C4D061D00569957 = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC681C4D061D00569957 /* 手势识别 */,
+				7D3FAC821C4D061D00569957 /* 手势识别Tests */,
+				7D3FAC671C4D061D00569957 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3FAC671C4D061D00569957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC661C4D061D00569957 /* 手势识别.app */,
+				7D3FAC7F1C4D061D00569957 /* 手势识别Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3FAC681C4D061D00569957 /* 手势识别 */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC6D1C4D061D00569957 /* AppDelegate.h */,
+				7D3FAC6E1C4D061D00569957 /* AppDelegate.m */,
+				7D3FAC701C4D061D00569957 /* ViewController.h */,
+				7D3FAC711C4D061D00569957 /* ViewController.m */,
+				7D3FAC691C4D061D00569957 /* Supporting Files */,
+			);
+			path = "手势识别";
+			sourceTree = "<group>";
+		};
+		7D3FAC691C4D061D00569957 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC731C4D061D00569957 /* Main.storyboard */,
+				7D3FAC761C4D061D00569957 /* Images.xcassets */,
+				7D3FAC781C4D061D00569957 /* LaunchScreen.xib */,
+				7D3FAC8F1C4D06E200569957 /* 鸣人笑容.png */,
+				7D3FAC6A1C4D061D00569957 /* Info.plist */,
+				7D3FAC6B1C4D061D00569957 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D3FAC821C4D061D00569957 /* 手势识别Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC851C4D061D00569957 /* ____Tests.m */,
+				7D3FAC831C4D061D00569957 /* Supporting Files */,
+			);
+			path = "手势识别Tests";
+			sourceTree = "<group>";
+		};
+		7D3FAC831C4D061D00569957 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3FAC841C4D061D00569957 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3FAC651C4D061D00569957 /* 手势识别 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3FAC891C4D061D00569957 /* Build configuration list for PBXNativeTarget "手势识别" */;
+			buildPhases = (
+				7D3FAC621C4D061D00569957 /* Sources */,
+				7D3FAC631C4D061D00569957 /* Frameworks */,
+				7D3FAC641C4D061D00569957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "手势识别";
+			productName = "手势识别";
+			productReference = 7D3FAC661C4D061D00569957 /* 手势识别.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D3FAC7E1C4D061D00569957 /* 手势识别Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3FAC8C1C4D061D00569957 /* Build configuration list for PBXNativeTarget "手势识别Tests" */;
+			buildPhases = (
+				7D3FAC7B1C4D061D00569957 /* Sources */,
+				7D3FAC7C1C4D061D00569957 /* Frameworks */,
+				7D3FAC7D1C4D061D00569957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D3FAC811C4D061D00569957 /* PBXTargetDependency */,
+			);
+			name = "手势识别Tests";
+			productName = "手势识别Tests";
+			productReference = 7D3FAC7F1C4D061D00569957 /* 手势识别Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3FAC5E1C4D061D00569957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = NFL;
+				TargetAttributes = {
+					7D3FAC651C4D061D00569957 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7D3FAC7E1C4D061D00569957 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7D3FAC651C4D061D00569957;
+					};
+				};
+			};
+			buildConfigurationList = 7D3FAC611C4D061D00569957 /* Build configuration list for PBXProject "手势识别" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D3FAC5D1C4D061D00569957;
+			productRefGroup = 7D3FAC671C4D061D00569957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3FAC651C4D061D00569957 /* 手势识别 */,
+				7D3FAC7E1C4D061D00569957 /* 手势识别Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3FAC641C4D061D00569957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3FAC751C4D061D00569957 /* Main.storyboard in Resources */,
+				7D3FAC7A1C4D061D00569957 /* LaunchScreen.xib in Resources */,
+				7D3FAC901C4D06E200569957 /* 鸣人笑容.png in Resources */,
+				7D3FAC771C4D061D00569957 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3FAC7D1C4D061D00569957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3FAC621C4D061D00569957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3FAC721C4D061D00569957 /* ViewController.m in Sources */,
+				7D3FAC6F1C4D061D00569957 /* AppDelegate.m in Sources */,
+				7D3FAC6C1C4D061D00569957 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3FAC7B1C4D061D00569957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3FAC861C4D061D00569957 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D3FAC811C4D061D00569957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3FAC651C4D061D00569957 /* 手势识别 */;
+			targetProxy = 7D3FAC801C4D061D00569957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D3FAC731C4D061D00569957 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3FAC741C4D061D00569957 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D3FAC781C4D061D00569957 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3FAC791C4D061D00569957 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D3FAC871C4D061D00569957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D3FAC881C4D061D00569957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D3FAC8A1C4D061D00569957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "手势识别/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7D3FAC8B1C4D061D00569957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "手势识别/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7D3FAC8D1C4D061D00569957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "手势识别Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/手势识别.app/手势识别";
+			};
+			name = Debug;
+		};
+		7D3FAC8E1C4D061D00569957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "手势识别Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/手势识别.app/手势识别";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3FAC611C4D061D00569957 /* Build configuration list for PBXProject "手势识别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3FAC871C4D061D00569957 /* Debug */,
+				7D3FAC881C4D061D00569957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3FAC891C4D061D00569957 /* Build configuration list for PBXNativeTarget "手势识别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3FAC8A1C4D061D00569957 /* Debug */,
+				7D3FAC8B1C4D061D00569957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D3FAC8C1C4D061D00569957 /* Build configuration list for PBXNativeTarget "手势识别Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3FAC8D1C4D061D00569957 /* Debug */,
+				7D3FAC8E1C4D061D00569957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D3FAC5E1C4D061D00569957 /* Project object */;
+}
