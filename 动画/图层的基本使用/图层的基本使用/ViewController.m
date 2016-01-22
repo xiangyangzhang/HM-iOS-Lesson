@@ -60,7 +60,7 @@
 - (void)imageViewLayer
 {
     _imageView.layer.cornerRadius = 10;//圆角，正方形图片大到宽度的一半可变成圆形
-    _imageView.layer.masksToBounds = YES;//实现剪裁，图片放在content上，需跟CALayer一起剪裁才能实现效果
+    _imageView.layer.masksToBounds = YES;//实现剪裁，图片放在contents上，需跟CALayer一起剪裁才能实现效果
     _imageView.layer.borderColor = [UIColor yellowColor].CGColor;
     _imageView.layer.borderWidth = 2;
 }
