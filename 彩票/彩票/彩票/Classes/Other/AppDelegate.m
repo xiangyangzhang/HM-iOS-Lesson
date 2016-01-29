@@ -20,22 +20,9 @@
     
     //1. 创建UIWindow
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     //2. 创建导航
     ITLTabBarViewController *tabBarController = [[ITLTabBarViewController alloc]init];
-    UIViewController *hallVC = [[UIViewController alloc]init];
-    UIViewController *buyVC = [[UIViewController alloc]init];
-    UIViewController *awardVC = [[UIViewController alloc]init];
-    UIViewController *randomVC = [[UIViewController alloc]init];
-    UIViewController *infoVC = [[UIViewController alloc]init];
-
-    hallVC.view.backgroundColor = [UIColor greenColor];
-    buyVC.view.backgroundColor = [UIColor blueColor];
-    awardVC.view.backgroundColor = [UIColor redColor];
-    randomVC.view.backgroundColor = [UIColor purpleColor];
-    infoVC.view.backgroundColor = [UIColor grayColor];
-
-    
-    tabBarController.viewControllers = @[hallVC,buyVC,awardVC,randomVC,infoVC];
     
     //3. 连接导航
     self.window.rootViewController = tabBarController;

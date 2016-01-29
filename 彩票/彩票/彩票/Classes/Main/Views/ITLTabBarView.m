@@ -22,43 +22,29 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-        [self addBtns];
+        
     }
     return self;
 }
 
-
-- (void)addBtns
+- (void)addTabBarButtonWithName:(NSString *)imageName selName:(NSString *)imageSelName
 {
-    NSString *imageName = nil;
-    NSString *imageSelName = nil;
+    //创建按钮，无高亮
+    ITLTabBarButton *btn = [ITLTabBarButton buttonWithType:UIButtonTypeCustom];
     
-    for (int i = 0; i<5; i++) {
-        
-        ITLTabBarButton *btn = [ITLTabBarButton buttonWithType:UIButtonTypeCustom];
-        
-        btn.tag = i;
-        
-        //格式化字符串
-        imageName = [NSString stringWithFormat:@"TabBar%d",i+1];
-        imageSelName = [NSString stringWithFormat:@"TabBar%dSel",i+1];
-        
-        [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-        [btn setBackgroundImage:[UIImage imageNamed:imageSelName] forState:UIControlStateSelected];
-        
-        //不实现监听方法，无法实现选中
-        //此处必须传参数，才能知道哪个按钮被选中
-        //UIControlEventTouchDown，按下去马上反应
-        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
-        
-        [self addSubview:btn];
-        
-        //默认第一个被选中
-        if (i == 0) {
-            [self btnClick:btn];
-        }
-        
-    }
+    //设置按钮背景图片
+    [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:imageSelName] forState:UIControlStateSelected];
+    
+    //监听点击按钮
+    //不实现监听方法，无法实现选中
+    //此处必须传参数，才能知道哪个按钮被选中
+    //UIControlEventTouchDown，按下去马上反应
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+    
+    [self addSubview:btn];
+
+
 }
 
 //点击时调用
@@ -96,9 +82,17 @@
         
         UIButton *btn =self.subviews[i];
         
+        //绑定角标
+        btn.tag = i;
+        
         btnX = i * btnW;
         
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
+        
+        // 默认第一个被选中
+        if (i == 0) {
+            [self btnClick:btn];
+        }
     }
     
 }

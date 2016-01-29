@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5040021C5853EB007943B3 /* ITLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5040011C5853EB007943B3 /* ITLNavigationController.m */; };
 		7D51B96D1C5120B400A8E28C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D51B96C1C5120B400A8E28C /* Images.xcassets */; };
 		7D51B9701C5120B400A8E28C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D51B96E1C5120B400A8E28C /* LaunchScreen.xib */; };
 		7D51B97C1C5120B400A8E28C /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D51B97B1C5120B400A8E28C /* __Tests.m */; };
@@ -15,7 +16,10 @@
 		7D51B9A71C512B5000A8E28C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D51B9A61C512B5000A8E28C /* Info.plist */; };
 		7D5856D21C5244890016E52A /* ITLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5856D11C5244890016E52A /* ITLTabBarViewController.m */; };
 		7D5856D51C5244B60016E52A /* ITLTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5856D41C5244B60016E52A /* ITLTabBarView.m */; };
+		7D65E6C21C5A035D005F1412 /* ITLHallInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D65E6C11C5A035D005F1412 /* ITLHallInfoViewController.m */; };
 		7D88CEF21C52677D00D6030E /* ITLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D88CEF11C52677D00D6030E /* ITLTabBarButton.m */; };
+		7DD66F7B1C58F28D00738B62 /* ITLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD66F7A1C58F28D00738B62 /* ITLHallViewController.m */; };
+		7DD66F7E1C59220E00738B62 /* ITLHallNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD66F7D1C59220E00738B62 /* ITLHallNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D5040001C5853EB007943B3 /* ITLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLNavigationController.h; sourceTree = "<group>"; };
+		7D5040011C5853EB007943B3 /* ITLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLNavigationController.m; sourceTree = "<group>"; };
 		7D51B95C1C5120B400A8E28C /* 彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D51B96C1C5120B400A8E28C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7D51B96F1C5120B400A8E28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,8 +49,14 @@
 		7D5856D11C5244890016E52A /* ITLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLTabBarViewController.m; sourceTree = "<group>"; };
 		7D5856D31C5244B60016E52A /* ITLTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLTabBarView.h; sourceTree = "<group>"; };
 		7D5856D41C5244B60016E52A /* ITLTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLTabBarView.m; sourceTree = "<group>"; };
+		7D65E6C01C5A035D005F1412 /* ITLHallInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLHallInfoViewController.h; sourceTree = "<group>"; };
+		7D65E6C11C5A035D005F1412 /* ITLHallInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLHallInfoViewController.m; sourceTree = "<group>"; };
 		7D88CEF01C52677D00D6030E /* ITLTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLTabBarButton.h; sourceTree = "<group>"; };
 		7D88CEF11C52677D00D6030E /* ITLTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLTabBarButton.m; sourceTree = "<group>"; };
+		7DD66F791C58F28D00738B62 /* ITLHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLHallViewController.h; sourceTree = "<group>"; };
+		7DD66F7A1C58F28D00738B62 /* ITLHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLHallViewController.m; sourceTree = "<group>"; };
+		7DD66F7C1C59220E00738B62 /* ITLHallNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLHallNavigationController.h; sourceTree = "<group>"; };
+		7DD66F7D1C59220E00738B62 /* ITLHallNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLHallNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +220,12 @@
 		7D51B98F1C51280400A8E28C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7DD66F791C58F28D00738B62 /* ITLHallViewController.h */,
+				7DD66F7A1C58F28D00738B62 /* ITLHallViewController.m */,
+				7D65E6C01C5A035D005F1412 /* ITLHallInfoViewController.h */,
+				7D65E6C11C5A035D005F1412 /* ITLHallInfoViewController.m */,
+				7DD66F7C1C59220E00738B62 /* ITLHallNavigationController.h */,
+				7DD66F7D1C59220E00738B62 /* ITLHallNavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +331,8 @@
 			children = (
 				7D5856D01C5244890016E52A /* ITLTabBarViewController.h */,
 				7D5856D11C5244890016E52A /* ITLTabBarViewController.m */,
+				7D5040001C5853EB007943B3 /* ITLNavigationController.h */,
+				7D5040011C5853EB007943B3 /* ITLNavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -435,10 +455,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD66F7B1C58F28D00738B62 /* ITLHallViewController.m in Sources */,
 				7D5856D21C5244890016E52A /* ITLTabBarViewController.m in Sources */,
+				7D5040021C5853EB007943B3 /* ITLNavigationController.m in Sources */,
 				7D51B9A51C51280400A8E28C /* main.m in Sources */,
 				7D5856D51C5244B60016E52A /* ITLTabBarView.m in Sources */,
+				7D65E6C21C5A035D005F1412 /* ITLHallInfoViewController.m in Sources */,
 				7D51B9A31C51280400A8E28C /* AppDelegate.m in Sources */,
+				7DD66F7E1C59220E00738B62 /* ITLHallNavigationController.m in Sources */,
 				7D88CEF21C52677D00D6030E /* ITLTabBarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +522,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -540,6 +566,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

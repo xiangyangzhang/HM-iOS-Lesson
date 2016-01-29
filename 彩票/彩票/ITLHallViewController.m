@@ -1,18 +1,18 @@
 //
-//  ITLTabBarViewController.m
+//  ITLHallViewController.m
 //  
 //
-//  Created by 倪凡乐 on 16/1/22.
+//  Created by 倪凡乐 on 16/1/27.
 //
 //
 
-#import "ITLTabBarViewController.h"
+#import "ITLHallViewController.h"
 
-@interface ITLTabBarViewController ()
+@interface ITLHallViewController ()
 
 @end
 
-@implementation ITLTabBarViewController
+@implementation ITLHallViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

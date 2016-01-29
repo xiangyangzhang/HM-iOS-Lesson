@@ -28,4 +28,6 @@
 //2. 声明，ARC中一般使用copy类型
 //@property (nonatomic,copy)ITLTabBarViewBlock block;
 
+- (void)addTabBarButtonWithName:(NSString *)imageName selName:(NSString *)imageSelName;
+
 @end
