@@ -23,8 +23,10 @@
     ITLHallViewController *hallViewController = [[ITLHallViewController alloc]init];
     ITLHallInfoViewController *hallInfoViewController = [[ITLHallInfoViewController alloc]init];
 
-
     self.viewControllers = @[hallViewController,hallInfoViewController];
+    
+    //默认打开根控制器
+    [self popToRootViewControllerAnimated:YES];
     
     hallViewController.navigationItem.title = @"购彩大厅";
     
@@ -48,7 +50,7 @@
 
 - (UIButton *)addButton
 {
-    //创建一个右边按钮
+    //创建一个按钮
     UIButton *Btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 40)];
     [Btn setImage:[UIImage imageNamed:@"zixunBarFlat"] forState:UIControlStateNormal];
     [Btn setTitle:@"咨询" forState:UIControlStateNormal];

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3BCCFC37-2A56-4D53-AE5F-6A4B77E0409C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>彩票</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>彩票/彩票/彩票.xcodeproj/project.xcworkspace</string>
+	<string>彩票/彩票/彩票.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>

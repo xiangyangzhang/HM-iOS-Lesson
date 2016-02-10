@@ -1,22 +1,22 @@
 //
-//  ITLHallViewController.m
+//  ITLTestViewController.m
 //  
 //
-//  Created by 倪凡乐 on 16/1/27.
+//  Created by 倪凡乐 on 16/2/6.
 //
 //
 
-#import "ITLHallViewController.h"
+#import "ITLTestViewController.h"
 
-@interface ITLHallViewController ()
+@interface ITLTestViewController ()
 
 @end
 
-@implementation ITLHallViewController
+@implementation ITLTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

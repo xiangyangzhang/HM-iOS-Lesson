@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5388C1EF-5A08-4FFE-AB0E-04AE46D64AA4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>01-团购</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Cell自定义/01-团购/01-团购.xcodeproj/project.xcworkspace</string>
+	<string>Cell自定义/01-团购/01-团购.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>

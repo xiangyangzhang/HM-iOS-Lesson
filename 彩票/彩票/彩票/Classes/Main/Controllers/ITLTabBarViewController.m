@@ -10,6 +10,9 @@
 #import "ITLTabBarView.h"
 #import "ITLNavigationController.h"
 #import "ITLHallNavigationController.h"
+#import "ITLBuyNavigationController.h"
+#import "ITLSettingController.h"
+#import "ITLMineViewController.h"
 
 
 @interface ITLTabBarViewController ()<ITLTabBarViewDelegate>
@@ -59,18 +62,18 @@
 - (void)addViewController
 {
     ITLHallNavigationController *hallVC = [[ITLHallNavigationController alloc]init];
-    UINavigationController *buyVC = [[UINavigationController alloc]init];
+    ITLBuyNavigationController *buyVC = [[ITLBuyNavigationController alloc]init];
     UINavigationController *awardVC = [[UINavigationController alloc]init];
     UINavigationController *randomVC = [[UINavigationController alloc]init];
-    UINavigationController *infoVC = [[UINavigationController alloc]init];
+    ITLMineViewController *mineVC = [[ITLMineViewController alloc]init];
     
     hallVC.view.backgroundColor = [UIColor greenColor];
     buyVC.view.backgroundColor = [UIColor blueColor];
     awardVC.view.backgroundColor = [UIColor redColor];
     randomVC.view.backgroundColor = [UIColor purpleColor];
-    infoVC.view.backgroundColor = [UIColor grayColor];
+    mineVC.view.backgroundColor = [UIColor whiteColor];
 
-    self.viewControllers = @[hallVC,buyVC,awardVC,randomVC,infoVC];
+    self.viewControllers = @[hallVC,buyVC,awardVC,randomVC,mineVC];
 
 }
 
