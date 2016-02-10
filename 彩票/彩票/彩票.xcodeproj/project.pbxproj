@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0061A61C6AF66300D16398 /* ITLPushNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0061A51C6AF66300D16398 /* ITLPushNoticeController.m */; };
 		7D0351051C6446C000B0B70F /* ITLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0351041C6446C000B0B70F /* ITLMineViewController.m */; };
 		7D0351081C649B0500B0B70F /* ITLSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0351071C649B0500B0B70F /* ITLSettingItem.m */; };
 		7D4CE9571C6597F500DB7DC0 /* ITLSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CE9561C6597F500DB7DC0 /* ITLSettingCell.m */; };
@@ -32,6 +33,7 @@
 		7D88CEF21C52677D00D6030E /* ITLTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D88CEF11C52677D00D6030E /* ITLTabBarButton.m */; };
 		7DB986521C5F810B00D69662 /* ITLBuyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB986511C5F810B00D69662 /* ITLBuyNavigationController.m */; };
 		7DB986551C5F85D300D69662 /* ITLBuyTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB986541C5F85D300D69662 /* ITLBuyTitleButton.m */; };
+		7DD50E521C6AF0F7004BDCF3 /* ITLBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD50E511C6AF0F7004BDCF3 /* ITLBaseController.m */; };
 		7DD66F7B1C58F28D00738B62 /* ITLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD66F7A1C58F28D00738B62 /* ITLHallViewController.m */; };
 		7DD66F7E1C59220E00738B62 /* ITLHallNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD66F7D1C59220E00738B62 /* ITLHallNavigationController.m */; };
 		7DD680DE1C69CE870019527B /* ITLProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD680DD1C69CE870019527B /* ITLProductController.m */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D0061A41C6AF66300D16398 /* ITLPushNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLPushNoticeController.h; sourceTree = "<group>"; };
+		7D0061A51C6AF66300D16398 /* ITLPushNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLPushNoticeController.m; sourceTree = "<group>"; };
 		7D0351031C6446C000B0B70F /* ITLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLMineViewController.h; sourceTree = "<group>"; };
 		7D0351041C6446C000B0B70F /* ITLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLMineViewController.m; sourceTree = "<group>"; };
 		7D0351061C649B0500B0B70F /* ITLSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLSettingItem.h; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		7DB986511C5F810B00D69662 /* ITLBuyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLBuyNavigationController.m; sourceTree = "<group>"; };
 		7DB986531C5F85D300D69662 /* ITLBuyTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLBuyTitleButton.h; sourceTree = "<group>"; };
 		7DB986541C5F85D300D69662 /* ITLBuyTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLBuyTitleButton.m; sourceTree = "<group>"; };
+		7DD50E501C6AF0F7004BDCF3 /* ITLBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLBaseController.h; sourceTree = "<group>"; };
+		7DD50E511C6AF0F7004BDCF3 /* ITLBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLBaseController.m; sourceTree = "<group>"; };
 		7DD66F791C58F28D00738B62 /* ITLHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLHallViewController.h; sourceTree = "<group>"; };
 		7DD66F7A1C58F28D00738B62 /* ITLHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLHallViewController.m; sourceTree = "<group>"; };
 		7DD66F7C1C59220E00738B62 /* ITLHallNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLHallNavigationController.h; sourceTree = "<group>"; };
@@ -454,8 +460,12 @@
 		7DB986571C5FACD400D69662 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7DD50E501C6AF0F7004BDCF3 /* ITLBaseController.h */,
+				7DD50E511C6AF0F7004BDCF3 /* ITLBaseController.m */,
 				7D5854741C5FADC500450CDB /* ITLSettingController.h */,
 				7D5854751C5FADC500450CDB /* ITLSettingController.m */,
+				7D0061A41C6AF66300D16398 /* ITLPushNoticeController.h */,
+				7D0061A51C6AF66300D16398 /* ITLPushNoticeController.m */,
 				7DD680DC1C69CE870019527B /* ITLProductController.h */,
 				7DD680DD1C69CE870019527B /* ITLProductController.m */,
 				7D4CE95E1C66459100DB7DC0 /* ITLTestViewController.h */,
@@ -615,6 +625,7 @@
 				7DD680E11C69EA8D0019527B /* ITLProduct.m in Sources */,
 				7D5856D21C5244890016E52A /* ITLTabBarViewController.m in Sources */,
 				7D4CE9611C66459100DB7DC0 /* ITLTestViewController.m in Sources */,
+				7D0061A61C6AF66300D16398 /* ITLPushNoticeController.m in Sources */,
 				7D4CE9571C6597F500DB7DC0 /* ITLSettingCell.m in Sources */,
 				7D4CE95D1C6640D000DB7DC0 /* ITLSettingArrowItem.m in Sources */,
 				7D0351051C6446C000B0B70F /* ITLMineViewController.m in Sources */,
@@ -624,6 +635,7 @@
 				7D51B9A51C51280400A8E28C /* main.m in Sources */,
 				7D71C92C1C65852E00F9703A /* ITLSettingGroup.m in Sources */,
 				7D5856D51C5244B60016E52A /* ITLTabBarView.m in Sources */,
+				7DD50E521C6AF0F7004BDCF3 /* ITLBaseController.m in Sources */,
 				7D65E6C21C5A035D005F1412 /* ITLHallInfoViewController.m in Sources */,
 				7D4CE96C1C699C8500DB7DC0 /* MBProgressHUD.m in Sources */,
 				7D51B9A31C51280400A8E28C /* AppDelegate.m in Sources */,

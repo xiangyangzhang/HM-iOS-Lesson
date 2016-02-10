@@ -14,7 +14,9 @@
 + (instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title
 {
     ITLSettingItem *item = [[self alloc]init];
+    
     item.icon = icon;
+    
     item.title = title;
     
     return item;

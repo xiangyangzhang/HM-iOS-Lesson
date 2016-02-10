@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITLBaseController.h"
 
-@interface ITLSettingController : UITableViewController
+@interface ITLSettingController : ITLBaseController
 
 @end

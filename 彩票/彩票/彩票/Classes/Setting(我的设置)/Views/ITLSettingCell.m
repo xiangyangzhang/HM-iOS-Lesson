@@ -49,7 +49,10 @@
 
 - (void)setData
 {
-    self.imageView.image = [UIImage imageNamed:self.item.icon];
+    if (self.item.icon.length > 0) {
+        
+        self.imageView.image = [UIImage imageNamed:self.item.icon];
+    }
     self.textLabel.text = self.item.title;
 }
 
