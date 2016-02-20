@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2AAAADB9-DE1E-4914-AF13-B9E96FAA65D2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>多线程-同步异步并发</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>网络多线程/多线程-同步异步并发/多线程-同步异步并发.xcodeproj/project.xcworkspace</string>
+	<string>网络多线程/多线程-同步异步并发/多线程-同步异步并发.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
