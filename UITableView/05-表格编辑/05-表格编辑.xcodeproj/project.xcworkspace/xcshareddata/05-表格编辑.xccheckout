@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2DF74876-EFB5-4298-BBD8-8C3124D8A23D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>05-表格编辑</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
 		<string>https://github.com/nifanle7/HM-iOS-Lesson.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UITableView/05-表格编辑/05-表格编辑.xcodeproj/project.xcworkspace</string>
+	<string>UITableView/05-表格编辑/05-表格编辑.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>831C482137FADE7538559CE24666BF288F96ED9D</key>
