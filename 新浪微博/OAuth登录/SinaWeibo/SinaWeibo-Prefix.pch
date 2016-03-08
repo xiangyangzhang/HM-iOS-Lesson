@@ -1,0 +1,36 @@
+//
+//  SinaWeibo-Prefix.pch
+//  SinaWeibo
+//
+//  Created by 倪凡乐 on 16/2/28.
+//  Copyright (c) 2016年 NFL. All rights reserved.
+//
+
+#ifndef SinaWeibo_SinaWeibo_Prefix_pch
+#define SinaWeibo_SinaWeibo_Prefix_pch
+#import "UIView+Extension.h"
+#import "UIWindow+Extension.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// RGB 颜色
+#define MColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define MRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0  alpha:1.0]
+
+// 屏幕宽高
+#define MScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 新特性图片张数
+#define MNewFeatureCount 4
+
+
+#ifdef DEBUG // 处于开发阶段
+#define MLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define MLog(...)
+#endif
+
+#endif
