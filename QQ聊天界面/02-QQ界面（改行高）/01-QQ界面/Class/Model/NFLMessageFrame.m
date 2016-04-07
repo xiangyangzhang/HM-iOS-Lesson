@@ -49,7 +49,7 @@
     
     CGSize textMaxSize = CGSizeMake(kTextMaxWidth, MAXFLOAT);//确定正文最大宽度和高度
     CGSize textRealSize = [message.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:kButtonFont} context:nil].size;
-    
+                 
     if (message.type == NFLMessagTypeGatsby) {
         //自己发
         textX = kScreenWidth - textRealSize.width - iconW - kPadding;
